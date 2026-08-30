@@ -294,22 +294,31 @@ footer {
 
 /* ===== MOBILE (telas até 768px) ===== */
 @media (max-width: 768px) {
-
     header {
-        padding: 12px 20px;
+        padding: 16px 20px;
     }
 
     nav {
         flex-direction: column;
         align-items: flex-start;
-        gap: 12px;
+        gap: 16px;
     }
 
     .nav-esquerda,
     .nav-direita {
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: flex-start;
         gap: 12px;
         width: 100%;
+    }
+
+    .logo {
+        margin-bottom: 4px;
+    }
+
+    .nav-direita {
+        border-top: 1px solid rgba(246, 241, 232, 0.2);
+        padding-top: 12px;
     }
 
     .logo img {
@@ -359,6 +368,6 @@ footer {
     }
 
     .info-grid {
-    grid-template-columns: 1fr;
-}
+        grid-template-columns: 1fr;
+    }
 }
